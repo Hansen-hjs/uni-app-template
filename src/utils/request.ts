@@ -60,7 +60,8 @@ export default function request(
                 } else {
                     uni.showToast({
                         title: info.msg,
-                        position: "bottom"
+                        position: "bottom",
+                        duration: 2400
                     });
                     fail && fail(info);
                     resolve(info);
